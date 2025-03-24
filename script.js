@@ -27,7 +27,18 @@ document.addEventListener('DOMContentLoaded', function() {
     function showImage(n) {
         currentSlide = (n + slideCount) % slideCount;
         slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+
         updateDots();
+        changeItem();
+    }
+
+    const navList = document.querySelectorAll('.link');
+
+    function changeItem () {
+        navList.forEach((link, index) => {
+            link.addEventListener('click', () => showImage(index));
+            link.classList.toggle('active', index === currentSlide);
+        })
     }
 
     prevButton.addEventListener('click', () => showImage(currentSlide -1));
@@ -35,5 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
         updateDots();
+        changeItem();
     
 });

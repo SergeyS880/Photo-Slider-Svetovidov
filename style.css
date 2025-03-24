@@ -117,15 +117,15 @@ img, picture, canvas, svg {
     justify-content: space-between;
     align-items: center;
 }
-.nav-box__list {
+.navList {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
 }
-.nav-box__item {
+.navItem {
     padding: 32px;
 }
-.box_link {
+.link {
     font-family: 'Yeseva One', serif;
     font-weight: 400;
     font-size: 14px;
@@ -133,7 +133,11 @@ img, picture, canvas, svg {
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.3);
 }
-.box_link:hover, .box_link:focus, .box_link:active {
+.link.active {
+    text-decoration: underline;
+    color: #e3b873;
+}
+.link:hover, .link:focus, .link:active {
     text-decoration: underline;
     color: #e3b873;
 }
