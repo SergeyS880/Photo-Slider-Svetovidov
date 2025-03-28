@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const prevButton = document.querySelector('.prev-btn');
     const nextButton = document.querySelector('.next-btn');
     const dotsContainer = document.querySelector('.dots');
+    const underTitle = document.querySelector('.under-title');
+    const underSubtitle = Array.from(underTitle.children);
 
     let currentSlide = 0;
     const slideCount = slides.length;
