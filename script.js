@@ -42,6 +42,11 @@ document.addEventListener('DOMContentLoaded', function() {
             link.classList.toggle('active', index === currentSlide);
         })
     }
+    underSubtitle.forEach(function (subtitle, index) {
+        if (index == 0) {
+            subtitle.classList.add('active');
+        }
+    })
 
     prevButton.addEventListener('click', () => showImage(currentSlide -1));
     nextButton.addEventListener('click', () => showImage(currentSlide +1));

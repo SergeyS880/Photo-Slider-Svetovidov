@@ -178,4 +178,8 @@ img, picture, canvas, svg {
     font-size: 13px;
     line-height: 164%;
     color: #fff;
+    opacity: 0;
+}
+.under-subtitle.active {
+    opacity: 1;
 }
